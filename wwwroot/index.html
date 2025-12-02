@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <button id="btn">Нажми меня</button>
+    <p id="output"></p>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const output = document.getElementById("output");
+
+        btn.addEventListener("click", () => {
+            output.innerText = "Привет";
+        });
+
+        // Инициализация Mini App
+        Telegram.WebApp.ready();
+    </script>
+</body>
+</html>
